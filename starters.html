@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starters</title>
+</head>
+<body>
+    <h1 style="margin-left: 470px;">Starters</h1>
+    <p style="margin-left: 470px;">Functional examples of using Bootstrap in common JS frameworks like Webpack, Parcel, Vite, and more you can edit StackBlitz</p>
+    
+    <div class="firstRow">
+        <div class="item">
+            <div id="package" class="pack">
+                <img id="package-img" src="package.png" alt="package">
+                <h3>CDN starter</h3>
+            </div>
+            <div class="boltdiv">
+                <p style="margin-bottom: 20px; text-align: left; color: rgb(125, 125, 125);">Instantly include a Bootstrap's compiled CSS and <br> JavaScript via the jsDelivr CDN.</p>
+                <div class="bolt-content">
+                    <img id="bolt" src="bolt.png" alt="bolt">
+                    <p style="text-decoration: underline; text-decoration-color: rgb(62, 102, 230); color: rgb(125, 125, 125);">Edit in StackBlitz</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div id="package" class="pack">
+                <img id="package-img" src="package.png" alt="package">
+                <h3>Sass & JS</h3>
+            </div>
+            <div class="boltdiv">
+                <p style="margin-bottom: 20px; text-align: left; color: rgb(125, 125, 125);">Use npm to import and compile Bootstrap's Sass <br> with Autoprefixer and Styleint, plus our bundled <br> Javascript</p>
+                <div class="bolt-content">
+                    <img id="bolt" src="bolt.png" alt="bolt">
+                    <p style="text-decoration: underline; text-decoration-color: rgb(62, 102, 230); color: rgb(125, 125, 125);">Edit in StackBlitz</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div id="package" class="pack">
+                <img id="package-img" src="package.png" alt="package">
+                <h3>Sass & ESM JS</h3>
+            </div>
+            <div class="boltdiv">
+                <p style="margin-bottom: 20px; text-align: left; color: rgb(125, 125, 125);">Import and compile Bootstrap's Sass with <br> Autoprefixer and Styleint, and compile our source <br> JavaScript with an ESM shim</p>
+                <div class="bolt-content">
+                    <img id="bolt" src="bolt.png" alt="bolt">
+                    <p style="text-decoration: underline; text-decoration-color: rgb(62, 102, 230); color: rgb(125, 125, 125);">Edit in StackBlitz</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="firstRow">
+        <div class="item">
+            <div id="package" class="pack">
+                <img id="package-img" src="package.png" alt="package">
+                <h3>Webpack</h3>
+            </div>
+            <div class="boltdiv">
+                <p style="margin-bottom: 20px; text-align: left; color: rgb(125, 125, 125);">Import and bundle Bootstrap's source Sass and JavaScript with Webpack.</p>
+                <div class="bolt-content">
+                    <img id="bolt" src="bolt.png" alt="bolt">
+                    <p style="text-decoration: underline; text-decoration-color: rgb(62, 102, 230); color: rgb(125, 125, 125);">Edit in StackBlitz</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div id="package" class="pack">
+                <img id="package-img" src="package.png" alt="package">
+                <h3>Parcel</h3>
+            </div>
+            <div class="boltdiv">
+                <p style="margin-bottom: 20px; text-align: left; color: rgb(125, 125, 125);">Import and bundle Bootstrap's source Sass and JavaScript via Parcel.</p>
+                <div class="bolt-content">
+                    <img id="bolt" src="bolt.png" alt="bolt">
+                    <p style="text-decoration: underline; text-decoration-color: rgb(62, 102, 230); color: rgb(125, 125, 125);">Edit in StackBlitz</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div id="package" class="pack">
+                <img id="package-img" src="package.png" alt="package">
+                <h3>Vite</h3>
+            </div>
+            <div class="boltdiv">
+                <p style="margin-bottom: 20px; text-align: left; color: rgb(125, 125, 125);">Import and bundle Bootstrap's source Sass and JavaScript with Vite.</p>
+                <div class="bolt-content">
+                    <img id="bolt" src="bolt.png" alt="bolt">
+                    <p style="text-decoration: underline; text-decoration-color: rgb(62, 102, 230); color: rgb(125, 125, 125);">Edit in StackBlitz</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+#package-img {
+    width: 25px;
+    height: 25px;
+}
+
+#bolt {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+h3 {
+    color: rgb(62, 102, 230);
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+.firstRow {
+   display: flex;
+   justify-content: center;  /* Középre igazítjuk az összes elemet */
+   gap: 30px; /* Közötti távolság 30px (ha nagyobb, növelheted) */
+   text-align: center;
+   width: 100%;
+}
+
+.item {
+    display: flex;
+    flex-direction: column; 
+    flex: 1;
+    max-width: 300px;  /* Maximális szélesség minden item számára */
+}
+
+.pack {
+    display: flex;
+    align-items: center;  
+}
+
+.boltdiv {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.bolt-content {
+    display: flex;
+    align-items: center; 
+}
+
+.boltdiv p {
+    margin: 5px 0;
+}
+</style>
+</html>
